@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser(description="description:identify enhancer or p
 parser.add_argument("--tissue",help="eg.LW-2W-1-Heart")
 parser.add_argument("--marker1",help="eg.LW-2W-1-H3K4me3-Heart.summit2.bed")
 parser.add_argument("--marker2",help="eg.LW-2W-2-H3K27ac-Heart.summit2.bed")
-parser.add_argument("--TSSPath",help="Path of TSS_reference")
+parser.add_argument("--TSSPath",help="Path of flanked TSS region") #2.5 kb upstream and 1 kb downstream
 args=parser.parse_args()
 ######
 argv0_list = sys.argv[0].split("\\")
